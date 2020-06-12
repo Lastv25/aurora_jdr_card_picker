@@ -31,7 +31,7 @@ body {
 }
 .myButton:active {
 	position:absolute;
-	top:1px;
+	right:100px;
 }
 
 
