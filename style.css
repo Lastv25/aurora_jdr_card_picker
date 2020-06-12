@@ -56,7 +56,7 @@ body {
 }
 .myButton:active {
 	position:absolute;
-	right:10px;
+	margin-left: 220px;
 }
 
 .img {
