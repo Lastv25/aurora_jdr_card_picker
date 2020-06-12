@@ -26,6 +26,7 @@ function getDeck()
 		var card = {Value: major[i], Suit: "Major"};
 		deck.push(card);
 	}
+	console.log("Deck Created");
 	return deck;
 }
 
@@ -55,5 +56,6 @@ function Draw(deck, probaR, increment)
     } else {
         var pick = card["Value"] + " " + card["Suit"] ;
    }
+   console.log(pick);
 	return pick;
 }
