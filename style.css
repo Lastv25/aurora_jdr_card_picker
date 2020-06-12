@@ -8,6 +8,18 @@ body {
   background-color: lightblue;
 }
 
+/* Button styles */
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn:hover {background: #eee;}
+
 /* Style the side navigation */
 .sidenav {
   height: 100%;
