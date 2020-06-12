@@ -15,7 +15,7 @@ body {
 	background-color:#ffffff;
 	border-radius:6px;
 	border:1px solid #dcdcdc;
-	display:inline-block;
+	display:block;
 	cursor:pointer;
 	color:#666666;
 	font-family:Arial;
