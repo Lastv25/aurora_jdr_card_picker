@@ -46,17 +46,14 @@ function shuffle(deck)
 }
 
 
-function Draw(deck, probaR)
+function Draw(deck, probaR, increment)
 {
-	// for 2000 turns
-	// switch the values of two random cards
-	for (var i = 0; i < 2000; i++)
-	{
-		var location1 = Math.floor((Math.random() * deck.length));
-		var location2 = Math.floor((Math.random() * deck.length));
-		var tmp = deck[location1];
-
-		deck[location1] = deck[location2];
-		deck[location2] = tmp;
-	}
+    const rand = Math.random() < probaR/100;
+	var card = deck[pick];
+	if (rand == 0){
+         var pick = card["Value"] + " " + card["Suit"] + " R";
+    } else {
+        var pick = card["Value"] + " " + card["Suit"] ;
+   }
+	return pick;
 }
