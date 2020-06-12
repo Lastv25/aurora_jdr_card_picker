@@ -66,10 +66,10 @@ body {
 
 /* input text */
 input[type="text"] {
-   width: 40%;
+   width: 20%;
    border: 2px solid #aaa;
    border-radius: 4px;
-   margin-left: 260px;
+   margin-left: 460px;
    outline: none;
    padding: 8px;
    box-sizing: border-box;
