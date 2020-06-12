@@ -30,7 +30,7 @@ body {
 	background-color:#f6f6f6;
 }
 .myButton:active {
-	position:relative;
+	position:fixed;
 	top:1px;
 }
 
