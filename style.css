@@ -28,10 +28,12 @@ body {
 .myButton:hover {
 	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
 	background-color:#f6f6f6;
+	position:absolute;
+    top:50px;
 }
 .myButton:active {
-	position:fixed;
-	top:1px;
+	position:absolute;
+	top:50px;
 }
 
 
