@@ -36,7 +36,7 @@ body {
 /* Button styles */
 .btn-group button {
   background-color: #D2B4DE; /* light purple background */
-  border: 1px ;
+  border: 1px red;
   color: white; /* White text */
   padding: 10px 24px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
@@ -59,13 +59,13 @@ body {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
-  width: 150px;
-  height: 100px;
+  width: 300px;
+  height: 500px;
   margin-left: 250px;
 }
 
 /* input text */
-.input[type="text"] {
+input[type="text"] {
    width: 100%;
    border: 2px solid #aaa;
    border-radius: 4px;
@@ -76,7 +76,7 @@ body {
    transition: 0.3s;
  }
 
-.input[type="text"]:focus {
+input[type="text"]:focus {
 border-color: dodgerBlue;
 box-shadow: 0 0 8px 0 dodgerBlue;
 }
