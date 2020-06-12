@@ -27,6 +27,10 @@ function getDeck()
 		deck.push(card);
 	}
 	console.log("Deck Created");
+	for(var i = 0; i < deck.length; i++)
+    	{
+    		console.log(deck[i].Value+ " "+deck[i].Suit);
+    	}
 	return deck;
 }
 
