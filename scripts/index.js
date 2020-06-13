@@ -37,18 +37,18 @@ function getDeck()
 }
 
 
-function shuffle(deck)
+function shuffle()
 {
 	// for 2000 turns
 	// switch the values of two random cards
 	for (var i = 0; i < 2000; i++)
 	{
-		var location1 = Math.floor((Math.random() * deck.length));
-		var location2 = Math.floor((Math.random() * deck.length));
-		var tmp = deck[location1];
+		var location1 = Math.floor((Math.random() * tarot_deck.length));
+		var location2 = Math.floor((Math.random() * tarot_deck.length));
+		var tmp = tarot_deck[location1];
 
-		deck[location1] = deck[location2];
-		deck[location2] = tmp;
+		tarot_deck[location1] = tarot_deck[location2];
+		tarot_deck[location2] = tmp;
 	}
 }
 
