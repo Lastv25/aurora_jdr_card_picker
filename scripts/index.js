@@ -57,14 +57,15 @@ function Draw()
     console.log("Draw function called");
     var probaR = parseInt(document.getElementById("probaR"), 10);
     const rand = Math.random() < probaR/100;
+    console.log(probaR);
     console.log(rand);
 
 	if (rand == 0){
-	    console.log(card.Value + " " + card.Suit+ " R");
-        var pick = card.Value + " " + card.Suit+ " R";
+	    console.log(tarot_deck[rand].Value + " " + tarot_deck[rand].Suit+ " R");
+        var pick = tarot_deck[rand].Value + " " + tarot_deck[rand].Suit+ " R";
     } else {
-        console.log(card.Value + " " + card.Suit);
-        var pick = card.Value + " " + card.Suit ;
+        console.log(tarot_deck[rand].Value + " " + tarot_deck[rand].Suit);
+        var pick = tarot_deck[rand].Value + " " + tarot_deck[rand].Suit ;
    }
 }
 
