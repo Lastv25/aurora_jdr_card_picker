@@ -60,7 +60,7 @@ function Draw()
     console.log(rand);
 
 	if (rand == 0){
-	    console.log(card.Value + " " + card.Suit+ " R";);
+	    console.log(card.Value + " " + card.Suit+ " R");
         var pick = card.Value + " " + card.Suit+ " R";
     } else {
         console.log(card.Value + " " + card.Suit);
