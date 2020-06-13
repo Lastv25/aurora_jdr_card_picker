@@ -8,7 +8,7 @@ var major = ["The Fool", "The Magician", "The High Priest", "The Empress", "The 
                 "The World"];
 
 var tarot_deck;  // global deck variable
-var increment = 1;
+var increment = 0;
 var getDrawButton = document.getElementById('drawButton');
 var getShuffleButton = document.getElementById('shuffleButton');
 var getprobaR = document.getElementById("probaR");
@@ -50,6 +50,7 @@ function shuffle()
 		tarot_deck[location1] = tarot_deck[location2];
 		tarot_deck[location2] = tmp;
 	}
+	console.log("Deck Shuffeled");
 }
 
 
@@ -58,22 +59,28 @@ function Draw()
     console.log("Draw function called");
     var probaR = getprobaR.value
 
-    console.log(probaR);
     const rand = Math.random() < probaR/100;
-    console.log(parseInt(probaR, 10));
-    console.log(rand);
 
 	if (rand == 0){
-	    console.log(tarot_deck[increment].Value + " " + tarot_deck[increment].Suit+ " R");
         var pick = tarot_deck[increment].Value + " " + tarot_deck[increment].Suit+ " R";
     } else {
-        console.log(tarot_deck[increment].Value + " " + tarot_deck[increment].Suit);
         var pick = tarot_deck[increment].Value + " " + tarot_deck[increment].Suit ;
    }
 
    increment = increment+1;
+   if (increment == 78){
+        Reset()
+   }
+   console.log(pick)
 }
 
+
+function Reset()
+{
+    console.log("Reset function called");
+    tarot_deck = getDeck();
+    increment = 0;
+}
 
 // Events
 
