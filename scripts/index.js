@@ -62,9 +62,9 @@ function Draw()
     const rand = Math.random() < probaR/100;
 
 	if (rand == 0){
-        var pick = tarot_deck[increment].Value + " " + tarot_deck[increment].Suit+ " R";
+        var pick = tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit+ "_R";
     } else {
-        var pick = tarot_deck[increment].Value + " " + tarot_deck[increment].Suit ;
+        var pick = tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit ;
    }
 
    increment = increment+1;
