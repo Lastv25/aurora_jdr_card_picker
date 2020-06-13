@@ -65,7 +65,10 @@ function Draw()
 //	return pick;
 }
 
-
+function Onload()
+{
+    getDeck();
+    document.getElementById("drawButton").onclick = Draw();
+}
 // Events
-window.onload = getDeck();
-document.getElementById("drawButton").onclick = Draw();
+window.onload = Onload();
