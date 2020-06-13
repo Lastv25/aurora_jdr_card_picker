@@ -11,6 +11,7 @@ var tarot_deck;  // global deck variable
 var increment = 1;
 var getDrawButton = document.getElementById('drawButton');
 var getShuffleButton = document.getElementById('shuffleButton');
+var getprobaR = document.getElementById("probaR");
 
 // Functions definitions
 function getDeck()
@@ -55,7 +56,7 @@ function shuffle(deck)
 function Draw()
 {
     console.log("Draw function called");
-    var probaR = document.getElementById("probaR");
+
     console.log(probaR);
     const rand = Math.random() < probaR/100;
     console.log(parseInt(probaR, 10));
@@ -78,3 +79,6 @@ function Draw()
 window.onload = getDeck();
 getDrawButton.addEventListener('click', Draw);
 getShuffleButton.addEventListener('click', shuffle);
+getprobaR.addEventListener('keyup', function(){
+        var getprobaR = getprobaR.value;
+      });
