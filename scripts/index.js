@@ -10,6 +10,7 @@ var major = ["The Fool", "The Magician", "The High Priest", "The Empress", "The 
 var tarot_deck;  // global deck variable
 var increment = 1;
 var getDrawButton = document.getElementById('drawButton');
+var getShuffleButton = document.getElementById('shuffleButton');
 
 // Functions definitions
 function getDeck()
@@ -53,8 +54,9 @@ function shuffle(deck)
 
 function Draw()
 {
-    console.log("Draw function called 5");
-    //const rand = Math.random() < probaR/100;
+    console.log("Draw function called");
+    const rand = Math.random() < probaR/100;
+    console.log(rand);
 	//var card = deck[pick];
 //	if (rand == 0){
 //         var pick = card["Value"] + " " + card["Suit"] + " R";
@@ -70,3 +72,4 @@ function Draw()
 
 window.onload = getDeck();
 getDrawButton.addEventListener('click', Draw);
+getShuffleButton.addEventListener('click', shuffle);
