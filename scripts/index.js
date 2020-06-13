@@ -7,6 +7,7 @@ var major = ["The Fool", "The Magician", "The High Priest", "The Empress", "The 
                 "Death", "Temperance", "The Devil", "The Tower", "The Star", "The Moon", "The Sun", "Judgment",
                 "The World"];
 
+var tarot_deck;  // global deck variable
 
 function getDeck()
 {
@@ -21,12 +22,13 @@ function getDeck()
 		}
 	}
 
+    for(var i = 0; i < major.length; i++)
+	{
+		var card = {Value: major[i], Suit: "Major"};
+		deck.push(card);
+	}
 	console.log("Deck Created");
-	for(var i = 0; i < deck.length; i++)
-    	{
-    		console.log(deck[i].Value+ " "+deck[i].Suit);
-    	}
-	return deck;
+	tarot_deck = deck;
 }
 
 
@@ -61,3 +63,8 @@ function Draw(deck, probaR, increment)
 
 
 window.onload = getDeck();
+
+for(var i = 0; i < tarot_deck.length; i++)
+{
+    console.log(tarot_deck[i].Value + " " + tarot_deck[i].Suit);
+}
