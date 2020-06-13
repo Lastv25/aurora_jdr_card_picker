@@ -56,6 +56,7 @@ function shuffle(deck)
 function Draw()
 {
     console.log("Draw function called");
+    var probaR = getprobaR.value
 
     console.log(probaR);
     const rand = Math.random() < probaR/100;
