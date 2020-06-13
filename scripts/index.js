@@ -63,3 +63,6 @@ function Draw(deck, probaR, increment)
    console.log(pick);
 	return pick;
 }
+
+
+window.onload = getDeck();
