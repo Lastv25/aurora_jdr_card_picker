@@ -55,18 +55,21 @@ function shuffle(deck)
 function Draw()
 {
     console.log("Draw function called");
-    var probaR = parseInt(document.getElementById("probaR"), 10);
-    const rand = Math.random() < probaR/100;
+    var probaR = document.getElementById("probaR");
     console.log(probaR);
+    const rand = Math.random() < probaR/100;
+    console.log(parseInt(probaR, 10));
     console.log(rand);
 
 	if (rand == 0){
-	    console.log(tarot_deck[rand].Value + " " + tarot_deck[rand].Suit+ " R");
-        var pick = tarot_deck[rand].Value + " " + tarot_deck[rand].Suit+ " R";
+	    console.log(tarot_deck[increment].Value + " " + tarot_deck[increment].Suit+ " R");
+        var pick = tarot_deck[increment].Value + " " + tarot_deck[increment].Suit+ " R";
     } else {
-        console.log(tarot_deck[rand].Value + " " + tarot_deck[rand].Suit);
-        var pick = tarot_deck[rand].Value + " " + tarot_deck[rand].Suit ;
+        console.log(tarot_deck[increment].Value + " " + tarot_deck[increment].Suit);
+        var pick = tarot_deck[increment].Value + " " + tarot_deck[increment].Suit ;
    }
+
+   increment = increment+1;
 }
 
 
