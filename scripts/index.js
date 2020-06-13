@@ -80,5 +80,5 @@ window.onload = getDeck();
 getDrawButton.addEventListener('click', Draw);
 getShuffleButton.addEventListener('click', shuffle);
 getprobaR.addEventListener('keyup', function(){
-        var getprobaR = getprobaR.value;
+        var probaR = getprobaR.value;
       });
