@@ -68,4 +68,4 @@ function Draw()
 
 // Events
 window.onload = getDeck();
-document.getElementById("drawButton").onclick =
+document.getElementById("drawButton").onclick = Draw();
