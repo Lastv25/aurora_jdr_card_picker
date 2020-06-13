@@ -55,16 +55,17 @@ function shuffle(deck)
 function Draw()
 {
     console.log("Draw function called");
+    var probaR = parseInt(document.getElementById("probaR"), 10);
     const rand = Math.random() < probaR/100;
     console.log(rand);
-	//var card = deck[pick];
-//	if (rand == 0){
-//         var pick = card["Value"] + " " + card["Suit"] + " R";
-//    } else {
-//        var pick = card["Value"] + " " + card["Suit"] ;
-//   }
-//   console.log(pick);
-//	return pick;
+
+	if (rand == 0){
+	    console.log(card.Value + " " + card.Suit+ " R";);
+        var pick = card.Value + " " + card.Suit+ " R";
+    } else {
+        console.log(card.Value + " " + card.Suit);
+        var pick = card.Value + " " + card.Suit ;
+   }
 }
 
 
