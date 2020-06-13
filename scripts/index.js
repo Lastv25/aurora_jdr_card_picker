@@ -1,5 +1,5 @@
 
-
+// Variables definitions
 var suits = ["cups", "clubs", "pentacles", "swords"];
 var values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "P", "Kn", "Q", "Kg"];
 var major = ["The Fool", "The Magician", "The High Priest", "The Empress", "The Emperor", "The Hierophant",
@@ -8,7 +8,10 @@ var major = ["The Fool", "The Magician", "The High Priest", "The Empress", "The 
                 "The World"];
 
 var tarot_deck;  // global deck variable
+var increment = 1;
 
+
+// Functions definitions
 function getDeck()
 {
 	var deck = new Array();
@@ -48,23 +51,21 @@ function shuffle(deck)
 }
 
 
-function Draw(deck, probaR, increment)
+function Draw()
 {
-    const rand = Math.random() < probaR/100;
-	var card = deck[pick];
-	if (rand == 0){
-         var pick = card["Value"] + " " + card["Suit"] + " R";
-    } else {
-        var pick = card["Value"] + " " + card["Suit"] ;
-   }
-   console.log(pick);
-	return pick;
+    console.log("Draw function called");
+    //const rand = Math.random() < probaR/100;
+	//var card = deck[pick];
+//	if (rand == 0){
+//         var pick = card["Value"] + " " + card["Suit"] + " R";
+//    } else {
+//        var pick = card["Value"] + " " + card["Suit"] ;
+//   }
+//   console.log(pick);
+//	return pick;
 }
 
 
+// Events
 window.onload = getDeck();
-
-for(var i = 0; i < tarot_deck.length; i++)
-{
-    console.log(tarot_deck[i].Value + " " + tarot_deck[i].Suit);
-}
+document.getElementById("drawButton").onclick =
