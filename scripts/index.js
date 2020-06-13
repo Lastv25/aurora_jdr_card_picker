@@ -21,11 +21,6 @@ function getDeck()
 		}
 	}
 
-    for(var i = 0; i < major.length; i++)
-	{
-		var card = {Value: major[i], Suit: "Major"};
-		deck.push(card);
-	}
 	console.log("Deck Created");
 	for(var i = 0; i < deck.length; i++)
     	{
