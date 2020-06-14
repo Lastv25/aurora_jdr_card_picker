@@ -56,7 +56,14 @@ function shuffle()
 function changeCard(card_name, reverse)
 {
     var name = "images/cards/" + card_name + ".jpg";
-    document.getElementById('imageOnClick').src= name;
+
+    if (reverse == 0) // if reversed
+        document.getElementById('imageOnClick').src= name;
+        document.getElementById("imageOnClick").style.transform = "rotate(180deg)";
+    } else {
+        document.getElementById('imageOnClick').src= name;
+    }
+
 	console.log("Card Changed");
 }
 
