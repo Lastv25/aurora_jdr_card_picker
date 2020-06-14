@@ -53,6 +53,12 @@ function shuffle()
 	console.log("Deck Shuffeled");
 }
 
+function changeCard(card_name, reverse)
+{
+    var name = card_name + ".jpg";
+    document.getElementById('imageOnClick').src= name;
+	console.log("Card Changed");
+}
 
 function Draw()
 {
