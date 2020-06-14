@@ -13,7 +13,7 @@ var getDrawButton = document.getElementById('drawButton');
 var getShuffleButton = document.getElementById('shuffleButton');
 var getprobaR = document.getElementById("probaR");
 var reversed = 0;
-const csvData = Papa.parse("lastv25.github.io/tarot_meaning.csv", {header:true}).data
+const csvData = Papa.parse("lastv25.github.io/tarot_meaning.csv", {download:true,header:true}).data
 
 // Functions definitions
 function findCardByName(name) {
