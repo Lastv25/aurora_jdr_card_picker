@@ -88,7 +88,7 @@ function Draw()
 {
     console.log("Draw function called");
     var probaR = getprobaR.value
-    const csvData = Papa.parse("lastv25.github.io/tarot_meaning.csv", {download:true,header:true}).data
+    const csvData = Papa.parse("lastv25.github.io/tarot_meaning.csv", {header:true}).data
 
     const rand = Math.random() < probaR/100;
 
