@@ -73,6 +73,7 @@ function Draw()
         var pick = tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit ;
    }
 
+   changeCard(tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit, " ")
    increment = increment+1;
    if (increment == 78){
         Reset()
