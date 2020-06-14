@@ -85,12 +85,12 @@ box-shadow: 0 0 8px 0 dodgerBlue;
     margin: auto;
     padding: 20px 40px 40px;
     max-width: 600px;
-    &__image {
+    container2__image {
         width: 250px;
         margin: 30px 30px 30px 0;
         float: left;
     }
-    &__text {
+    container2__text {
         display: inline;
     }
 }
