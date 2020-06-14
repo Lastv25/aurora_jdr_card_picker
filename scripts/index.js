@@ -62,6 +62,7 @@ function shuffle()
 function changeCard(card_name, reverse)
 {
     var name = "images/cards/" + card_name + ".jpg";
+    const csvData = Papa.parse("lastv25.github.io/tarot_meaning.csv", {header:true}).data
 
     if (reverse == 0) {// if reversed
         if (reversed == 1) {// if already reversed
@@ -80,7 +81,10 @@ function changeCard(card_name, reverse)
             document.getElementById('imageOnClick').src= name;
         }
     }
-
+   console.log(csvData);
+   console.log(
+   findCardByName('The Tower')
+   );
 	console.log("Card Changed");
 }
 
@@ -88,7 +92,6 @@ function Draw()
 {
     console.log("Draw function called");
     var probaR = getprobaR.value
-    const csvData = Papa.parse("lastv25.github.io/tarot_meaning.csv", {header:true}).data
 
     const rand = Math.random() < probaR/100;
 
@@ -113,10 +116,6 @@ function Draw()
         Reset()
    }
    console.log(pick)
-   console.log(csvData);
-   console.log(
-   findCardByName('The Tower')
-   );
 }
 
 
