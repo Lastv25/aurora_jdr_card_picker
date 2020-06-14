@@ -83,6 +83,7 @@ box-shadow: 0 0 8px 0 dodgerBlue;
 }
 
 .container2 {
+    margin: auto;
     display:inline-block;
     width:100%;
     height:auto;
