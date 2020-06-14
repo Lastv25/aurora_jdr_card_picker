@@ -81,6 +81,13 @@ border-color: dodgerBlue;
 box-shadow: 0 0 8px 0 dodgerBlue;
 }
 
+.container2 {
+    width:100%;
+    height:auto;
+    padding:1%;
+}
+
+
 /* Style the content */
 .content {
   text-align: center;
