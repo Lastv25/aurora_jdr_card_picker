@@ -55,13 +55,14 @@ body {
 }
 
 /* image */
-.img {
+.img_index {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
   width: 250px;
   height: 400px;
   margin: auto;
+  float:left;
 }
 
 /* input text */
