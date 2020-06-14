@@ -57,7 +57,7 @@ function changeCard(card_name, reverse)
 {
     var name = "images/cards/" + card_name + ".jpg";
 
-    if (reverse == 0) // if reversed
+    if (reverse == 0) {// if reversed
         document.getElementById('imageOnClick').src= name;
         document.getElementById("imageOnClick").style.transform = "rotate(180deg)";
     } else {
