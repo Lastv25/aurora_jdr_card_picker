@@ -61,7 +61,7 @@ function shuffle()
 
 function getInfosonCard(card_name, reversed)
 {
-   const csvData = Papa.parse("lastv25.github.io/tarot_meaning.csv", {download:true, delimiter: ",",header:true}).data
+   const csvData = Papa.parse("lastv25.github.io/tarot_meaning.csv", {linebreak:"\n", delimiter: ",",header:true}).data
    console.log(csvData);
    console.log(findCardByName('The Tower'));
 }
