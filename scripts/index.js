@@ -12,6 +12,7 @@ var increment = 0;
 var getDrawButton = document.getElementById('drawButton');
 var getShuffleButton = document.getElementById('shuffleButton');
 var getprobaR = document.getElementById("probaR");
+var reversed = 0;
 
 // Functions definitions
 function getDeck()
@@ -58,10 +59,21 @@ function changeCard(card_name, reverse)
     var name = "images/cards/" + card_name + ".jpg";
 
     if (reverse == 0) {// if reversed
-        document.getElementById('imageOnClick').src= name;
-        document.getElementById("imageOnClick").style.transform = "rotate(180deg)";
+        if (reversed == 1) {// if already reversed
+                document.getElementById('imageOnClick').src= name;
+        } else {
+            document.getElementById('imageOnClick').src= name;
+            document.getElementById("imageOnClick").style.transform = "rotate(180deg)";
+            reversed = 1;
+        }
     } else {
-        document.getElementById('imageOnClick').src= name;
+        if (reversed == 1) {// if already reversed
+            document.getElementById('imageOnClick').src= name;
+            document.getElementById("imageOnClick").style.transform = "rotate(0deg)";
+            reversed = 0;
+        } else {
+            document.getElementById('imageOnClick').src= name;
+        }
     }
 
 	console.log("Card Changed");
