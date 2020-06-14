@@ -29,7 +29,7 @@ function getDeck()
 
     for(var i = 0; i < major.length; i++)
 	{
-		var card = {Value: major[i], Suit: ""};
+		var card = {Value: major[i], Suit: "Major"};
 		deck.push(card);
 	}
 	console.log("Deck Created");
@@ -69,11 +69,20 @@ function Draw()
 
 	if (rand == 0){
         var pick = tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit+ "_R";
+        if (tarot_deck[increment].Suit.localeCompare("Major") == 0){ // if major
+            changeCard(tarot_deck[increment].Value, 0)
+        } else {
+            changeCard(tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit, 0)
+        }
     } else {
         var pick = tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit ;
-   }
+        if (tarot_deck[increment].Suit.localeCompare("Major") == 0){ // if major
+            changeCard(tarot_deck[increment].Value, 1)
+        } else {
+            changeCard(tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit, 1)
+        }
+    }
 
-   changeCard(tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit, " ")
    increment = increment+1;
    if (increment == 78){
         Reset()
