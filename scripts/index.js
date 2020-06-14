@@ -59,10 +59,18 @@ function shuffle()
 	console.log("Deck Shuffeled");
 }
 
+function getInfosonCard(card_name, reversed)
+{
+   const csvData = Papa.parse("lastv25.github.io/tarot_meaning.csv", {download:true, delimiter: ",",header:true}).data
+   console.log(csvData);
+   console.log(
+   findCardByName('The Tower');
+   );
+}
+
 function changeCard(card_name, reverse)
 {
     var name = "images/cards/" + card_name + ".jpg";
-    const csvData = Papa.parse("lastv25.github.io/tarot_meaning.csv", {header:true}).data
 
     if (reverse == 0) {// if reversed
         if (reversed == 1) {// if already reversed
@@ -81,10 +89,6 @@ function changeCard(card_name, reverse)
             document.getElementById('imageOnClick').src= name;
         }
     }
-   console.log(csvData);
-   console.log(
-   findCardByName('The Tower')
-   );
 	console.log("Card Changed");
 }
 
@@ -113,9 +117,11 @@ function Draw()
 
    increment = increment+1;
    if (increment == 78){
-        Reset()
+        Reset();
    }
-   console.log(pick)
+   console.log(pick);
+   getInfosonCard(tarot_deck[increment].Value, 1);
+
 }
 
 
