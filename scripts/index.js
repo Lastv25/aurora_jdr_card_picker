@@ -130,6 +130,7 @@ getShuffleButton.addEventListener('click', shuffle);
 getprobaR.addEventListener('keyup', function(){
         var probaR = getprobaR.value;
       });
+console.log(csvData);
 console.log(
 findCardByName('The Tower')
 );
