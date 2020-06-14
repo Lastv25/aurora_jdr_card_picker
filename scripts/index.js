@@ -29,7 +29,7 @@ function getDeck()
 
     for(var i = 0; i < major.length; i++)
 	{
-		var card = {Value: major[i], Suit: "Major"};
+		var card = {Value: major[i], Suit: ""};
 		deck.push(card);
 	}
 	console.log("Deck Created");
