@@ -13,7 +13,7 @@ var getDrawButton = document.getElementById('drawButton');
 var getShuffleButton = document.getElementById('shuffleButton');
 var getprobaR = document.getElementById("probaR");
 var reversed = 0;
-const csvData = Papa.parse("lastv25.github.io/tarot_meaning.csv", {download:true,header:true}).data
+
 
 // Functions definitions
 function findCardByName(name) {
@@ -88,6 +88,7 @@ function Draw()
 {
     console.log("Draw function called");
     var probaR = getprobaR.value
+    const csvData = Papa.parse("lastv25.github.io/tarot_meaning.csv", {download:true,header:true}).data
 
     const rand = Math.random() < probaR/100;
 
@@ -112,6 +113,10 @@ function Draw()
         Reset()
    }
    console.log(pick)
+   console.log(csvData);
+   console.log(
+   findCardByName('The Tower')
+   );
 }
 
 
@@ -130,7 +135,3 @@ getShuffleButton.addEventListener('click', shuffle);
 getprobaR.addEventListener('keyup', function(){
         var probaR = getprobaR.value;
       });
-console.log(csvData);
-console.log(
-findCardByName('The Tower')
-);
