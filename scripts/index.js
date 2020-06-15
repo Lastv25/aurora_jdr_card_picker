@@ -70,6 +70,7 @@ function parseData(url, callBack) {
         download:true,
         skipEmptyLines: true,
         complete: function(results) {
+            console.log(results.fields);
             callBack(results.data);
         }
     });
