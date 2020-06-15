@@ -58,6 +58,7 @@ function shuffle()
 
 function getInfosonCard(data)
 {
+   console.log("callback function");
    console.log(data);
    //console.log(csvData.filter(data => data.Name === "The Tower")[0].Name);
 }
