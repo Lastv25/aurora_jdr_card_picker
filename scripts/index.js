@@ -94,7 +94,7 @@ function Draw()
     console.log("Draw function called");
     var probaR = getprobaR.value
 
-    const rand = Math.random() < probaR/100;
+    const rand = Math.random() < (1-probaR/100);
 
 	if (rand == 0){
         var pick = tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit+ "_R";
