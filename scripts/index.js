@@ -56,10 +56,10 @@ function shuffle()
 	console.log("Deck Shuffeled");
 }
 
-function getInfosonCard(data, cardName)
+function getInfosonCard(data)
 {
    console.log("card Info");
-   console.log(data.filter(data => data.Name === cardName)[0]);
+   console.log(data.filter(data => data.Name === pick)[0]);
 }
 
 function parseData(url, cardName, callBack) {   //papa parse is async so need callback function
@@ -70,7 +70,7 @@ function parseData(url, cardName, callBack) {   //papa parse is async so need ca
         skipEmptyLines: true,
         complete: function(results) {
             //console.log(results.fields);
-            callBack(results.data, cardName);
+            callBack(results.data);
         }
     });
 }
@@ -131,7 +131,7 @@ function Draw()
         Reset();
    }
    console.log(pick);
-   parseData("lastv25.github.io/tarot_meaning.csv",getInfosonCard,pick);
+   parseData("lastv25.github.io/tarot_meaning.csv",getInfosonCard);
 
 }
 
