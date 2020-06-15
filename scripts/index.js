@@ -57,9 +57,9 @@ function shuffle()
 
 function getInfosonCard(card_name, reversed)
 {
-   console.log("Parsing test 4");
+   console.log("Parsing test 5");
    const csvData = Papa.parse("lastv25.github.io/tarot_meaning.csv", {linebreak:"\r\n",
-    delimiter: ",",header:false, skipEmptyLines: true,})
+    delimiter: ",",header:false, skipEmptyLines: true,download:true})
    console.log(csvData);
    console.log(csvData.filter(data => data.Name === "The Tower")[0].Name);
 }
