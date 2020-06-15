@@ -16,10 +16,6 @@ var reversed = 0;
 
 
 // Functions definitions
-function findCardByName(name) {
-  return csvData.filter(data => data.Name === name)[0].Name
-}
-
 function getDeck()
 {
 	var deck = new Array();
@@ -63,7 +59,7 @@ function getInfosonCard(card_name, reversed)
 {
    const csvData = Papa.parse("lastv25.github.io/tarot_meaning.csv", {linebreak:"\n", delimiter: ",",header:false}).data
    console.log(csvData);
-   console.log(findCardByName('The Tower'));
+   console.log(csvData.filter(data => data.Name === "The Tower")[0].Name);
 }
 
 function changeCard(card_name, reverse)
