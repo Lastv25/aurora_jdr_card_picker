@@ -61,7 +61,7 @@ function getInfosonCard(card_name, reversed)
    console.log("Parsing test 6");
    const csvData = Papa.parse("lastv25.github.io/tarot_meaning.csv", {linebreak:"\r\n",
     delimiter: ",",header:true, skipEmptyLines: true})
-   console.log(csvData);
+   console.log(csvData.data);
    //console.log(csvData.filter(data => data.Name === "The Tower")[0].Name);
 }
 
@@ -114,7 +114,7 @@ function Draw()
 
    increment = increment+1;
    cardNum = cardNum-1;
-   var newText = cardNum.toString()+ "remaining cards";
+   var newText = cardNum.toString()+ " remaining cards";
    document.getElementById("CardsNumber").innerHTML = newText;
 
    if (increment == 78){
