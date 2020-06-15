@@ -60,7 +60,7 @@ function getInfosonCard(data)
 {
    console.log("callback function");
    console.log(data);
-   //console.log(csvData.filter(data => data.Name === "The Tower")[0].Name);
+   console.log(data.filter(data => data.Name === "The Tower")[0].Name);
 }
 
 function parseData(url, callBack) {
@@ -70,7 +70,7 @@ function parseData(url, callBack) {
         download:true,
         skipEmptyLines: true,
         complete: function(results) {
-            console.log(results.fields);
+            //console.log(results.fields);
             callBack(results.data);
         }
     });
