@@ -56,13 +56,21 @@ function shuffle()
 	console.log("Deck Shuffeled");
 }
 
-function getInfosonCard(card_name, reversed)
+function getInfosonCard(data)
 {
-   console.log("Parsing test 6");
-   const csvData = Papa.parse("lastv25.github.io/tarot_meaning.csv", {linebreak:"\r\n",
-    delimiter: ",",header:true, skipEmptyLines: true})
-   console.log(csvData.data);
+   console.log(data);
    //console.log(csvData.filter(data => data.Name === "The Tower")[0].Name);
+}
+
+function parseData(url, callBack) {
+    Papa.parse(url, {linebreak:"\r\n",
+        delimiter: ",",
+        header:true,
+        skipEmptyLines: true,
+        complete: function(results) {
+            callBack(results.data);
+        }
+    });
 }
 
 function changeCard(card_name, reverse)
@@ -117,11 +125,11 @@ function Draw()
    var newText = cardNum.toString()+ " remaining cards";
    document.getElementById("CardsNumber").innerHTML = newText;
 
-   if (increment == 78){
+   if (increment == 77){
         Reset();
    }
    console.log(pick);
-   getInfosonCard(tarot_deck[increment].Value, 1);
+   parseData("lastv25.github.io/tarot_meaning.csv",getInfosonCard);
 
 }
 
