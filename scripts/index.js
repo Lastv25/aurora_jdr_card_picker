@@ -114,7 +114,8 @@ function Draw()
 
    increment = increment+1;
    cardNum = cardNum-1;
-   document.getElementById("CardsNumber").innerHTML = cardNum.toString()+ "remaining cards";
+   var newText = cardNum.toString()+ "remaining cards";
+   document.getElementById("CardsNumber").innerHTML = newText;
 
    if (increment == 78){
         Reset();
