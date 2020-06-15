@@ -1,7 +1,7 @@
 Name,Positive,Neutral,Negative
 The Fool,Growth;Holding Back,Exitement;Beginnings;Innocense,Reklessness;Unaware;Drunkenness;Carelessness; 
 The Magician,Power;Tactfulness;Determination;Resourcefulness,Manifestation;Knowledgel;Action,Manipulation;
-The High Priestess,Learning;Intuition,Secrets;Hidden Truths;Subconcious;Duality;Divine Ruler;Sacred Knowledge,Unseen;
+The High Priest,Learning;Intuition,Secrets;Hidden Truths;Subconcious;Duality;Divine Ruler;Sacred Knowledge,Unseen;
 The Empress,Love;Fortune;Beauty;Peaceful;Abundance,Energy;Nature,Doubt;Dependence;
 The Emperor,Strenght:Powerful;Discipline,Authority:Structure;Ambitious;Inflexibility,Opinionated;Domination;
 The Hierophant,Spiritual Wisdom;Freedom,Tradition;Conformity;Institutions;Status quo;Rebellion;Mind's Eye,Coercion;
@@ -21,59 +21,59 @@ The Moon,Secret truth;Fearless,Illusion;Inquisitive;Intuition;Subconcious,Anxiet
 The Sun,Wealth;Positivity;Peace;Vitality;Fun;Warmth,Optimism;Inner Child,Faliure;
 Judgement,Rebirth;Inner Calling;Absolution;Acceptance,Judgement,Avoidance;Obstacle;Ignoring;
 The World,Expanded Horizons;Completition;Accomplishments,Travel;IntegrationShortcut,Difficulties;Delays;
-Ace of Cups,Love;Creativity;Intuition;Pure intentions,Compassion;Birth;Passion,Repressed emotions;
-Two of Cups, Love;Support;Respect;Harmony;Sympathy;Friendship, Union,Distrust; Disharmony;
-Three of Cups,Healing;Celebrations;Favorable circumstances;Rest;Relaxation,Quiet,Nemesis;Alone;
-Four of Cups, Meditation;Knowledge, Reevaluation,Apathy;Frustration;Refusal;Conflict; Withdraw;Retreat;
-Five of Cups,Forgiveness;Inheritance,Growth,Regret;Pessimism;Setback;Loss of control;Shame;
-Six of Cups,Forgiveness;Joy; Innocence,The past;Childhood;New Environment;Memories,Disappearance;Stern;
-Seven of Cups,New choices;Inspiration;Ideas;Opportunities,Illusion;Variety;Imagination,Deception;Overwhelming;
-Eight of Cups,Escape,Pushback,Withdrawl;Disappointment;Vanity;Abandonment;Lack of importance;Indecision;Vanity;
-Nine of Cups,Contentment;Gratitiude;Fufilment;Success;Satisfaction;Celebration,Materialism;Quiet,Indulgence;
-Ten of Cups,Good Reputation;Harmony;Bliss,Alignment; Desire;Family,Struggle;Misjudgement;Disconnection;
-Page of Cups, Good heart;Depenable,Sensitivity;Admire,Harsh;Immature;Dependant;
-Knight of Cups,,Prince Charming;Proposal;Notification;Romance;Faithfulness;Idealisation;Rose Tinted Glasses,
-Queen of Cups,Riches;Loving;Loyal;Good counsel,Psychic;Compassion;Empathy,Overlooked;Betrayal;
-King of Cups,Intuition;Emotional Maturity;Vast Knowledge;Imagination;Intelligence,Passion;Devotion;Control,Misinterpreting;
-Ace of Wands,Opportunity;Potential;Energy,Growth;Rebirth,Distraction;Frustration;Delays;Uncertainty;
-Two of Wands,Progress;Partnership;Cooperation,Discovery;Self Assessment,Detachment;Uncertainty;Expansion;Discontent;
-Three of Wands,Luck;Ideas;Foresight;Observation;Opportunities,Vision;Trade,Blocked Growth;Cornered;
-Four of Wands,Good Results;Peace of Mind;Celebration;Harmony:Joy;Belonging,Belonging;Disproportionate,Disaster;
-Five of Wands,Pushing back,Tension;Competition,Challenge;Conflict;Obstacle;Fight;Disagreement;Avoidance;
-Six of Wands,Success;Recognition;Progress;Victory,Control;Power,Arrogance;Corruption;Renegade;
-Seven of Wands,Advantage;Protection;Standing your ground;Integrity,Defiance;Negotiation;Principle,Overwhelming;Challenge;
-Eight of Wands,Love;Fast,Movement;Communication;Anticipation;Hastened;Growth;Change,Delays;
-Nine of Wands,Patience;Resilience;Courage,Strategy;Persistence,Delays;Struggle;Paranoia;Overwhelmed;
-Ten of Wands,Massive undertaking,Effort;Responsibility;Hard work;Proximity;Sacrifices for success,Trickery;Burden;Necessity;
-Page of Wands,Enthusiasm;Confidence;Education;Plans,Potential;Devotion;Spirituality,Self LimitingSecrets
-Knight of Wands,Passion;Inspired Action;Fearlesness,Energy;Adventure;Haste,Delay;Impulsive;Frustration;
-Queen of Wands,Friendliness;Ambition;Determination;Leadership;Self Respect;Instinct;Pleasure,Business,Betrayal;
-King of Wands,Honour;Confidence,Vision;Authority;Dominant,Extremism;Impulsive;Haste;Ruthlesness;
-Ace of Swords,Breakthrough;Force;Mental Clarity;Success;Inner Clarity;organized,Great Love And HateIncessant drive,Clouded Judgement;
-Two of Swords,Honor;Respect;Allies;Working together,Equally matched;Difficult decision,Confusion;Worthy Opponentl;
-Three of Swords,forgiveness,Spying,Sorrow;Pain;Headache;Abrupt Separations;Mismanaged Goods;Unanswered Questions
-Four of Swords,Rest;Healing,Contemplation;Solitude,Grief;Stagnation;Slepless;Loneliness;Exhaustion;
-Five of Swords,Winning;Reconciliation,Letting go,Loss;Faliure;Consequences;Disagreement;Status loss;
-Six of Swords,Resistance;Moving,Change;Transition;Rite of passage;Unfinished business;Journey,SeparationThe past coming back to haunt you
-Seven of Swords,Acting Strategically;Industrious,Visionary,Betrayal;Treason;Deception;UnfairDishonesty;Irritation;
-Eight of Swords,,,Blame;Slander;Trouble;Bad News;Confusion;Restriction;Lack of freedom;Self-Conciousness
-Nine of Swords,Breaking Free,Secrets,Anxiety;Distress;Failed;Worry;Nigthmare;HurtSleeplesness;
-Ten of Swords,Trust;Regeneration,an end,Pain;Ruin;Emptiness;Destruction;Imprisonment;Treachery;
-Page of Swords,Clever;New Idea;VigilanceCommunication,Spy;Supervision;Curiosity;Haste,NegativeJealousy;
-Knight of Swords,Fast Thinking;Confident;Defense;Relentless,Ambitious;Challenge,Destructive;Aggressive;Confrontation;
-Queen of Swords,Independent;Unbiased Judgement,Direct,Cruel;Easily influenced;Cold Hearted;Mourning;Pain;
-King of Swords,Truth;Wise;Intellingent,Authority;Analytical;Logic,Manipulative;Power fiend;
-Ace of Pentacles,Positve:Profit;Stability;ClarityFortune,Exitement;Labour,Loss of reward;Lost opportunity;Lack of foresight;
-Two of Pentacles,Approveal;Swiftness;Abbundance of resources,Invitation;Reprioritization,Trouble;Resurfacing problems;Embarassment;Conflict;
-Three of Pentacles,Self empowerement;Well-Known;Recognition;Royalty;Skilled,Apprenticeship;learning;Collaboration,Misaligned;
-Four of Pentacles,Protection,Gift;posession;Materialism;Holding on;Control,Scarcity;Territorial;Greed;
-Five of Pentacles,Strength,Obbligations,Worry;Lack of resources;Devastation;Sickness;Loss;Poverty;
-Six of Pentacles,Sharing;Support;Immediate care;Presents;Generosity;Rewards,Work,One sided;Hardship;
-Seven of Pentacles,Planning;Education;Sustainable;Reaping the rewards of hard workEnterprise;Persistence;Long term investment,Limited success,Negative impact on results;
-Eight of Pentacles,Mastery;Employment;Special Knowledge;Self Development,Work;Perfectionism;Preparations,Separation;Misdirection;
-Nine of Pentacles,Blessing;Success;Luxury;Achievement;Improvements,Hustling;New path,Financial insecurity;More than you can take;
-Ten of Pentacles,Wealth;Comfort;Family life;Treaures,Traditions;Generational,Faliure; Loss;Dark side to success;
-Page of Pentacles,Charm;Practical;Opportunity;Develop and ability,Thrifty;Academia;Manifestation,Lack of progess;Doubtful;
-Knight of Pentacles,Honor:Assistance;Patience;Dependable,Militaristic;Persistence;responsible;Hard Work,Slow moving
-Queen of Pentacles,Caring;Motherly;Love;Generous; Good Natured,Sensitive;Practical;Protective;Luxurious,
-King of Pentacles, Stability;Leadership;Renown;abundance;Successful,Conncected;Materialistic,Inept;
+A_cups,Love;Creativity;Intuition;Pure intentions,Compassion;Birth;Passion,Repressed emotions;
+2_cups, Love;Support;Respect;Harmony;Sympathy;Friendship, Union,Distrust; Disharmony;
+3_cups,Healing;Celebrations;Favorable circumstances;Rest;Relaxation,Quiet,Nemesis;Alone;
+4_cups, Meditation;Knowledge, Reevaluation,Apathy;Frustration;Refusal;Conflict; Withdraw;Retreat;
+5_cups,Forgiveness;Inheritance,Growth,Regret;Pessimism;Setback;Loss of control;Shame;
+6_cups,Forgiveness;Joy; Innocence,The past;Childhood;New Environment;Memories,Disappearance;Stern;
+7_cups,New choices;Inspiration;Ideas;Opportunities,Illusion;Variety;Imagination,Deception;Overwhelming;
+8_cups,Escape,Pushback,Withdrawl;Disappointment;Vanity;Abandonment;Lack of importance;Indecision;Vanity;
+9_cups,Contentment;Gratitiude;Fufilment;Success;Satisfaction;Celebration,Materialism;Quiet,Indulgence;
+10_cups,Good Reputation;Harmony;Bliss,Alignment; Desire;Family,Struggle;Misjudgement;Disconnection;
+P_cups, Good heart;Depenable,Sensitivity;Admire,Harsh;Immature;Dependant;
+Kn_cups,,Prince Charming;Proposal;Notification;Romance;Faithfulness;Idealisation;Rose Tinted Glasses,
+Q_cups,Riches;Loving;Loyal;Good counsel,Psychic;Compassion;Empathy,Overlooked;Betrayal;
+Kg_cups,Intuition;Emotional Maturity;Vast Knowledge;Imagination;Intelligence,Passion;Devotion;Control,Misinterpreting;
+A_clubs,Opportunity;Potential;Energy,Growth;Rebirth,Distraction;Frustration;Delays;Uncertainty;
+2_clubs,Progress;Partnership;Cooperation,Discovery;Self Assessment,Detachment;Uncertainty;Expansion;Discontent;
+3_clubs,Luck;Ideas;Foresight;Observation;Opportunities,Vision;Trade,Blocked Growth;Cornered;
+4_clubs,Good Results;Peace of Mind;Celebration;Harmony:Joy;Belonging,Belonging;Disproportionate,Disaster;
+5_clubs,Pushing back,Tension;Competition,Challenge;Conflict;Obstacle;Fight;Disagreement;Avoidance;
+6_clubs,Success;Recognition;Progress;Victory,Control;Power,Arrogance;Corruption;Renegade;
+7_clubs,Advantage;Protection;Standing your ground;Integrity,Defiance;Negotiation;Principle,Overwhelming;Challenge;
+8_clubs,Love;Fast,Movement;Communication;Anticipation;Hastened;Growth;Change,Delays;
+9_clubs,Patience;Resilience;Courage,Strategy;Persistence,Delays;Struggle;Paranoia;Overwhelmed;
+10_clubs,Massive undertaking,Effort;Responsibility;Hard work;Proximity;Sacrifices for success,Trickery;Burden;Necessity;
+P_clubs,Enthusiasm;Confidence;Education;Plans,Potential;Devotion;Spirituality,Self LimitingSecrets
+Kn_clubs,Passion;Inspired Action;Fearlesness,Energy;Adventure;Haste,Delay;Impulsive;Frustration;
+Q_clubs,Friendliness;Ambition;Determination;Leadership;Self Respect;Instinct;Pleasure,Business,Betrayal;
+Kg_clubs,Honour;Confidence,Vision;Authority;Dominant,Extremism;Impulsive;Haste;Ruthlesness;
+A_swords,Breakthrough;Force;Mental Clarity;Success;Inner Clarity;organized,Great Love And HateIncessant drive,Clouded Judgement;
+2_swords,Honor;Respect;Allies;Working together,Equally matched;Difficult decision,Confusion;Worthy Opponentl;
+3_swords,forgiveness,Spying,Sorrow;Pain;Headache;Abrupt Separations;Mismanaged Goods;Unanswered Questions
+4_swords,Rest;Healing,Contemplation;Solitude,Grief;Stagnation;Slepless;Loneliness;Exhaustion;
+5_swords,Winning;Reconciliation,Letting go,Loss;Faliure;Consequences;Disagreement;Status loss;
+6_swords,Resistance;Moving,Change;Transition;Rite of passage;Unfinished business;Journey,SeparationThe past coming back to haunt you
+7_swords,Acting Strategically;Industrious,Visionary,Betrayal;Treason;Deception;UnfairDishonesty;Irritation;
+8_swords,,,Blame;Slander;Trouble;Bad News;Confusion;Restriction;Lack of freedom;Self-Conciousness
+9_swords,Breaking Free,Secrets,Anxiety;Distress;Failed;Worry;Nigthmare;HurtSleeplesness;
+10_swords,Trust;Regeneration,an end,Pain;Ruin;Emptiness;Destruction;Imprisonment;Treachery;
+P_swords,Clever;New Idea;VigilanceCommunication,Spy;Supervision;Curiosity;Haste,NegativeJealousy;
+Kn_swords,Fast Thinking;Confident;Defense;Relentless,Ambitious;Challenge,Destructive;Aggressive;Confrontation;
+Q_swords,Independent;Unbiased Judgement,Direct,Cruel;Easily influenced;Cold Hearted;Mourning;Pain;
+Kg_swords,Truth;Wise;Intellingent,Authority;Analytical;Logic,Manipulative;Power fiend;
+A_pentacles,Positve:Profit;Stability;ClarityFortune,Exitement;Labour,Loss of reward;Lost opportunity;Lack of foresight;
+2_pentacles,Approveal;Swiftness;Abbundance of resources,Invitation;Reprioritization,Trouble;Resurfacing problems;Embarassment;Conflict;
+3_pentacles,Self empowerement;Well-Known;Recognition;Royalty;Skilled,Apprenticeship;learning;Collaboration,Misaligned;
+4_pentacles,Protection,Gift;posession;Materialism;Holding on;Control,Scarcity;Territorial;Greed;
+5_pentacles,Strength,Obbligations,Worry;Lack of resources;Devastation;Sickness;Loss;Poverty;
+6_pentacles,Sharing;Support;Immediate care;Presents;Generosity;Rewards,Work,One sided;Hardship;
+7_pentacles,Planning;Education;Sustainable;Reaping the rewards of hard workEnterprise;Persistence;Long term investment,Limited success,Negative impact on results;
+8_pentacles,Mastery;Employment;Special Knowledge;Self Development,Work;Perfectionism;Preparations,Separation;Misdirection;
+9_pentacles,Blessing;Success;Luxury;Achievement;Improvements,Hustling;New path,Financial insecurity;More than you can take;
+10_pentacles,Wealth;Comfort;Family life;Treaures,Traditions;Generational,Faliure; Loss;Dark side to success;
+P_pentacles,Charm;Practical;Opportunity;Develop and ability,Thrifty;Academia;Manifestation,Lack of progess;Doubtful;
+Kn_pentacles,Honor:Assistance;Patience;Dependable,Militaristic;Persistence;responsible;Hard Work,Slow moving
+Q_pentacles,Caring;Motherly;Love;Generous; Good Natured,Sensitive;Practical;Protective;Luxurious,
+Kg_pentacles, Stability;Leadership;Renown;abundance;Successful,Conncected;Materialistic,Inept;
