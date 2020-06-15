@@ -60,7 +60,7 @@ function getInfosonCard(data)
 {
    console.log("callback function");
    console.log(data);
-   console.log(data.filter(data => data.Name === "The Tower")[0].Name);
+   console.log(data.filter(data => data.Name === "The Tower")[0]);
 }
 
 function parseData(url, callBack) {
