@@ -56,13 +56,13 @@ function shuffle()
 	console.log("Deck Shuffeled");
 }
 
-function getInfosonCard(data)
+function getInfosonCard(data, cardName)
 {
    console.log("card Info");
-   console.log(data.filter(data => data.Name === "The Tower")[0]);
+   console.log(data.filter(data => data.Name === cardName)[0]);
 }
 
-function parseData(url, callBack) {   //papa parse is async so need callback function
+function parseData(url, cardName, callBack) {   //papa parse is async so need callback function
     Papa.parse(url, {linebreak:"\r\n",
         delimiter: ",",
         header:true,
@@ -70,7 +70,7 @@ function parseData(url, callBack) {   //papa parse is async so need callback fun
         skipEmptyLines: true,
         complete: function(results) {
             //console.log(results.fields);
-            callBack(results.data);
+            callBack(results.data, cardName);
         }
     });
 }
@@ -131,7 +131,7 @@ function Draw()
         Reset();
    }
    console.log(pick);
-   parseData("lastv25.github.io/tarot_meaning.csv",getInfosonCard);
+   parseData("lastv25.github.io/tarot_meaning.csv",getInfosonCard,pick);
 
 }
 
