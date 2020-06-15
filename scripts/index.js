@@ -67,6 +67,7 @@ function parseData(url, callBack) {
     Papa.parse(url, {linebreak:"\r\n",
         delimiter: ",",
         header:true,
+        download:true,
         skipEmptyLines: true,
         complete: function(results) {
             callBack(results.data);
