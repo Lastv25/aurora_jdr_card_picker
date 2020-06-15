@@ -58,12 +58,11 @@ function shuffle()
 
 function getInfosonCard(data)
 {
-   console.log("callback function");
-   console.log(data);
+   console.log("card Info");
    console.log(data.filter(data => data.Name === "The Tower")[0]);
 }
 
-function parseData(url, callBack) {
+function parseData(url, callBack) {   //papa parse is async so need callback function
     Papa.parse(url, {linebreak:"\r\n",
         delimiter: ",",
         header:true,
