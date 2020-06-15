@@ -13,6 +13,7 @@ var getDrawButton = document.getElementById('drawButton');
 var getShuffleButton = document.getElementById('shuffleButton');
 var getprobaR = document.getElementById("probaR");
 var reversed = 0;
+var cardNum = 78;
 
 
 // Functions definitions
@@ -57,9 +58,9 @@ function shuffle()
 
 function getInfosonCard(card_name, reversed)
 {
-   console.log("Parsing test 5");
+   console.log("Parsing test 6");
    const csvData = Papa.parse("lastv25.github.io/tarot_meaning.csv", {linebreak:"\r\n",
-    delimiter: ",",header:false, skipEmptyLines: true,download:true})
+    delimiter: ",",header:true, skipEmptyLines: true})
    console.log(csvData);
    console.log(csvData.filter(data => data.Name === "The Tower")[0].Name);
 }
@@ -112,6 +113,9 @@ function Draw()
     }
 
    increment = increment+1;
+   cardNum = cardNum-1;
+   document.getElementById("CardsNumber").innerHTML = cardNum.toString();
+
    if (increment == 78){
         Reset();
    }
