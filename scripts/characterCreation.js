@@ -63,7 +63,7 @@ function getInfosonCard(data, pick, reversed)
 {
 
    var cardInfos = pick+"<br>";
-   //console.log("card Info");
+   console.log("card Info");
    if (reversed == 0){
         //console.log("Negative");
         //console.log(data.filter(data => data.Name === pick)[0].Negative);
@@ -76,7 +76,7 @@ function getInfosonCard(data, pick, reversed)
    //console.log(data.filter(data => data.Name === pick)[0].Neutral);
    cardInfos = cardInfos +"<br>Neutral Attributes: <br>"+data.filter(data => data.Name === pick)[0].Neutral;
    document.getElementById(cardsfields[increment_fields]).innerHTML = cardInfos;
-
+   console.log(cardsfields[increment_fields]);
 }
 
 function parseData(url, cardName, reversed, callBack) {   //papa parse is async so need callback function
