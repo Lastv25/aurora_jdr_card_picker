@@ -76,7 +76,9 @@ function getInfosonCard(data, pick, reversed)
    //console.log(data.filter(data => data.Name === pick)[0].Neutral);
    cardInfos = cardInfos +"<br>Neutral Attributes: <br>"+data.filter(data => data.Name === pick)[0].Neutral;
    document.getElementById(cardsfields[increment_fields]).innerHTML = cardInfos;
+   console.log(increment_fields.toString());
    console.log(cardsfields[increment_fields]);
+   increment_fields = increment_fields+1;
 }
 
 function parseData(url, cardName, reversed, callBack) {   //papa parse is async so need callback function
@@ -133,7 +135,6 @@ function Draw()
     }
 
    increment_deck = increment_deck+1;
-   increment_fields = increment_fields+1;
    cardNum = cardNum-1;
 
    if (increment_deck == 78){
