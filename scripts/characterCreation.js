@@ -96,7 +96,6 @@ function changeCard(card_name, reverse)
 
     if (reverse == 0) {// if reversed
         document.getElementById(fields[increment_fields]).style.transform = "rotate(180deg)";
-        }
     } else {
         document.getElementById(fields[increment_fields]).src= name;
         }
