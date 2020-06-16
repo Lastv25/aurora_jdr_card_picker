@@ -64,14 +64,12 @@ function getInfosonCard(data, pick, reversed)
    console.log(pick);
    if (reversed == 0){
         console.log("Negative");
-        console.log(data.filter(data => data.Name === pick)[0].Name);
         console.log(data.filter(data => data.Name === pick)[0].Negative);
-        cardInfos = cardInfos +data.filter(data => data.Name === pick)[0].Name +"\n" + "Negative attributes\n" + data.filter(data => data.Name === pick)[0].Negative;
+        cardInfos = cardInfos +"\n" + "Negative attributes\n" + data.filter(data => data.Name === pick)[0].Negative;
    } else {
         console.log("Positive");
-        console.log(data.filter(data => data.Name === pick)[0].Name);
         console.log(data.filter(data => data.Name === pick)[0].Positive);
-        cardInfos = cardInfos +data.filter(data => data.Name === pick)[0].Name +"\n" + "Positive attributes\n" + data.filter(data => data.Name === pick)[0].Negative;
+        cardInfos = cardInfos +"\n" + "Positive attributes\n" + data.filter(data => data.Name === pick)[0].Positive;
    }
    console.log(data.filter(data => data.Name === pick)[0].Neutral);
    cardInfos = cardInfos +"\nNeutral Attributes\n"+data.filter(data => data.Name === pick)[0].Neutral;
