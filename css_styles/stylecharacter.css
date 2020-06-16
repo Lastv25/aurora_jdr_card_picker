@@ -84,12 +84,12 @@ box-shadow: 0 0 8px 0 dodgerBlue;
 /* container for card and description in character creation page */
 .characterContainer {
     display:grid;
-    grid-template-columns: auto auto auto 100px;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: 300 300 300 100px;
+    grid-template-rows: 200 200 200;
     margin: auto;
     padding: 20px 40px 40px;
-    max-width: 1300px;
-    height: 700px;
+    max-width: 800px;
+    height: 600px;
 }
 
 .container3 {
@@ -104,11 +104,11 @@ box-shadow: 0 0 8px 0 dodgerBlue;
     }
 .c3_text {
     display:inline;
-    border: 1px solid #222;
     width: 10px;
     height: 10px;
     overflow-x: hidden;
     overflow-y: scroll;
+    font-size: 15px;
 }
 
 /* Style the content */
