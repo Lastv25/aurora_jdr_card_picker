@@ -84,8 +84,8 @@ box-shadow: 0 0 8px 0 dodgerBlue;
 /* container for card and description in character creation page */
 .characterContainer {
     display:grid;
-    grid-template-columns: 300 300 300 100px;
-    grid-template-rows: 200 200 200;
+    grid-template-columns: 300px 300px 300px 100px;
+    grid-template-rows: 200px 200px 200px;
     margin: auto;
     padding: 20px 40px 40px;
     max-width: 800px;
