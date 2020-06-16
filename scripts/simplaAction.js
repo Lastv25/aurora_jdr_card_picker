@@ -74,9 +74,9 @@ function getInfosonCard(data, pick, reversed)
    }
    //console.log(data.filter(data => data.Name === pick)[0].Neutral);
    cardInfos = cardInfos +"<br>Neutral Attributes: <br>"+data.filter(data => data.Name === pick)[0].Neutral;
-   document.getElementById("card"+cardsfields[increment_fields]).innerHTML = cardInfos;
+   document.getElementById("card"+fields[increment_fields]).innerHTML = cardInfos;
    console.log(increment_fields.toString());
-   console.log(cardsfields[increment_fields]);
+   console.log(fields[increment_fields]);
    increment_fields = increment_fields+1;
 }
 
