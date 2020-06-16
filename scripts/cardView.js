@@ -35,7 +35,11 @@ function getDeck()
 	// populating dropdown menu
 	var cardSelect = document.getElementById("cardSelector");
 	for(index in tarot_deck) {
-        cardSelect.options[cardSelect.options.length] = new Option(tarot_deck[index].Value, index);
+        if (tarot_deck[increment].Suit.localeCompare("Major") == 0){ // if major
+            cardSelect.options[cardSelect.options.length] = new Option(tarot_deck[index].Value, index);
+        } else {
+            cardSelect.options[cardSelect.options.length] = new Option(tarot_deck[index].Value+"_"+tarot_deck[increment].Suit, index);
+        }
     }
     console.log("Menu populated");
 }
