@@ -31,6 +31,13 @@ function getDeck()
 	}
 	console.log("Deck Created");
 	tarot_deck = deck;
+
+	// populating dropdown menu
+	var cardSelect = document.getElementById("cardSelector");
+	for(index in tarot_deck) {
+        cardSelect.options[cardSelect.options.length] = new Option(tarot_deck[index].Value, index);
+    }
+    console.log("Menu populated");
 }
 
 function getInfosonCard(data, pick, reversed)
