@@ -101,12 +101,11 @@ box-shadow: 0 0 8px 0 dodgerBlue;
 .characterContainer {
     margin: auto;
     padding: 20px 40px 40px;
-    max-width: 1200px;
+    max-width: 900px;
     height: 700px;
 }
 
 .container3 {
-    display:inline;
     padding: 20px 40px 40px;
     max-width: 400px;
     height: 200px;
