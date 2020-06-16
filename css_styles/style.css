@@ -81,11 +81,28 @@ border-color: dodgerBlue;
 box-shadow: 0 0 8px 0 dodgerBlue;
 }
 
+/* container for card and description in index page */
 .container2 {
     margin: auto;
     padding: 20px 40px 40px;
     max-width: 900px;
-    height: 500px;
+    height: 480px;
+}
+.c2_image {
+        width: 250px;
+        margin: 30px 30px 30px 0;
+        float: left;
+    }
+.c2_text {
+    display: inline;
+}
+
+/* container for card and description in character creation page */
+.container2 {
+    margin: auto;
+    padding: 20px 40px 40px;
+    max-width: 300px;
+    height: 200px;
 }
 .c2_image {
         width: 250px;
