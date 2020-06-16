@@ -123,7 +123,7 @@ function Draw()
             changeCard(tarot_deck[increment_deck].Value, 1);
             parseData("lastv25.github.io/tarot_meaning.csv", tarot_deck[increment_deck].Value, 1, getInfosonCard);
         } else {
-            changeCard(tarot_deck[increment].Value + "_" + tarot_deck[increment_deck].Suit, 1);
+            changeCard(tarot_deck[increment_deck].Value + "_" + tarot_deck[increment_deck].Suit, 1);
             parseData("lastv25.github.io/tarot_meaning.csv", tarot_deck[increment_deck].Value + "_" + tarot_deck[increment_deck].Suit, 1, getInfosonCard);
         }
     }
@@ -132,7 +132,7 @@ function Draw()
    increment_fields = increment_fields+1;
    cardNum = cardNum-1;
 
-   if (increment == 78){
+   if (increment_deck == 78){
         Reset();
    }
    console.log(pick);
@@ -144,7 +144,7 @@ function Reset()
 {
     console.log("Reset function called");
     tarot_deck = getDeck();
-    increment = 0;
+    increment_deck = 0;
 }
 
 // Events
