@@ -103,11 +103,11 @@ box-shadow: 0 0 8px 0 dodgerBlue;
         float: left;
     }
 .c3_text {
-    overflow:auto;
+    overflow:scroll;
     display: inline;
     font-size:15px;
     width: 200px;
-    height: 150px;
+    height: 100px;
 }
 
 /* Style the content */
