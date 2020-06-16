@@ -95,7 +95,7 @@ box-shadow: 0 0 8px 0 dodgerBlue;
 .container3 {
     padding: 20px 40px 40px;
     max-width: 400px;
-    height: 200px;
+    height: auto;
 }
 .c3_image {
     width: 100px;
