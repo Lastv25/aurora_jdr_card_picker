@@ -56,14 +56,21 @@ function shuffle()
 	console.log("Deck Shuffeled");
 }
 
-function getInfosonCard(data, pick)
+function getInfosonCard(data, pick, reversed)
 {
    console.log("card Info");
    console.log(pick);
-   console.log(data.filter(data => data.Name === pick)[0]);
+   if (reverse == 0){
+        console.log(data.filter(data => data.Name === pick)[0].Name);
+        console.log(data.filter(data => data.Name === pick)[0].Negative);
+   } else {
+        console.log(data.filter(data => data.Name === pick)[0].Name);
+        console.log(data.filter(data => data.Name === pick)[0].Positive);
+   }
+   console.log(data.filter(data => data.Name === pick)[0].Neutral);
 }
 
-function parseData(url, cardName, callBack) {   //papa parse is async so need callback function
+function parseData(url, cardName, reversed, callBack) {   //papa parse is async so need callback function
     Papa.parse(url, {linebreak:"\r\n",
         delimiter: ",",
         header:true,
@@ -71,7 +78,7 @@ function parseData(url, cardName, callBack) {   //papa parse is async so need ca
         skipEmptyLines: true,
         complete: function(results) {
             //console.log(results.fields);
-            callBack(results.data, cardName);
+            callBack(results.data, cardName, reversed);
         }
     });
 }
@@ -110,16 +117,20 @@ function Draw()
 	if (rand == 0){
         var pick = tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit+ "_R";
         if (tarot_deck[increment].Suit.localeCompare("Major") == 0){ // if major
-            changeCard(tarot_deck[increment].Value, 0)
+            changeCard(tarot_deck[increment].Value, 0);
+            parseData("lastv25.github.io/tarot_meaning.csv", tarot_deck[increment].Value, 0, getInfosonCard);
         } else {
-            changeCard(tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit, 0)
+            changeCard(tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit, 0);
+            parseData("lastv25.github.io/tarot_meaning.csv", tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit, 0, getInfosonCard);
         }
     } else {
         var pick = tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit ;
         if (tarot_deck[increment].Suit.localeCompare("Major") == 0){ // if major
-            changeCard(tarot_deck[increment].Value, 1)
+            changeCard(tarot_deck[increment].Value, 1);
+            parseData("lastv25.github.io/tarot_meaning.csv", tarot_deck[increment].Value, 1, getInfosonCard);
         } else {
-            changeCard(tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit, 1)
+            changeCard(tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit, 1);
+            parseData("lastv25.github.io/tarot_meaning.csv", tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit, 1, getInfosonCard);
         }
     }
 
@@ -132,7 +143,6 @@ function Draw()
         Reset();
    }
    console.log(pick);
-   parseData("lastv25.github.io/tarot_meaning.csv", pick, getInfosonCard);
 
 }
 
