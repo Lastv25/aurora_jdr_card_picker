@@ -61,17 +61,17 @@ function getInfosonCard(data, pick, reversed)
 {
 
    var cardInfos = pick+"<br>";
-   console.log("card Info");
+   //console.log("card Info");
    if (reversed == 0){
-        console.log("Negative");
-        console.log(data.filter(data => data.Name === pick)[0].Negative);
+        //console.log("Negative");
+        //console.log(data.filter(data => data.Name === pick)[0].Negative);
         cardInfos = cardInfos +"<br>" + "Negative attributes: <br>" + data.filter(data => data.Name === pick)[0].Negative;
    } else {
-        console.log("Positive");
-        console.log(data.filter(data => data.Name === pick)[0].Positive);
+        //console.log("Positive");
+        //console.log(data.filter(data => data.Name === pick)[0].Positive);
         cardInfos = cardInfos +"<br>" + "Positive attributes: <br>" + data.filter(data => data.Name === pick)[0].Positive;
    }
-   console.log(data.filter(data => data.Name === pick)[0].Neutral);
+   //console.log(data.filter(data => data.Name === pick)[0].Neutral);
    cardInfos = cardInfos +"<br>Neutral Attributes: <br>"+data.filter(data => data.Name === pick)[0].Neutral;
    document.getElementById(fields[increment_fields]).innerHTML = cardInfos;
 
@@ -94,17 +94,19 @@ function changeCard(card_name, reverse)
 {
     var name = "images/cards/" + card_name + ".jpg";
     if (reverse == 0) {// if reversed
+        console.log("Here");
+        document.getElementById(fields[increment_fields]).src= name;
         document.getElementById(fields[increment_fields]).style.transform = "rotate(180deg)";
     } else {
         document.getElementById(fields[increment_fields]).src= name;
     }
-	console.log("Card Changed");
-	console.log(fields[increment_fields]);
+	//console.log("Card Changed");
+	//console.log(fields[increment_fields]);
 }
 
 function Draw()
 {
-    console.log("Draw function called");
+    //console.log("Draw function called");
     var probaR = getprobaR.value
 
     const rand = Math.random() < (1-probaR/100);
