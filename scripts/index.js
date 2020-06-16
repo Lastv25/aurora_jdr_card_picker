@@ -59,19 +59,19 @@ function shuffle()
 function getInfosonCard(data, pick, reversed)
 {
 
-   var cardInfos = pick+"\r\n";
+   var cardInfos = pick+"<br>";
    console.log("card Info");
    if (reversed == 0){
         console.log("Negative");
         console.log(data.filter(data => data.Name === pick)[0].Negative);
-        cardInfos = cardInfos +"\r\n" + "Negative attributes: \r\n" + data.filter(data => data.Name === pick)[0].Negative;
+        cardInfos = cardInfos +"<br>" + "Negative attributes: <br>" + data.filter(data => data.Name === pick)[0].Negative;
    } else {
         console.log("Positive");
         console.log(data.filter(data => data.Name === pick)[0].Positive);
-        cardInfos = cardInfos +"\r\n" + "Positive attributes: \r\n" + data.filter(data => data.Name === pick)[0].Positive;
+        cardInfos = cardInfos +"<br>" + "Positive attributes: <br>" + data.filter(data => data.Name === pick)[0].Positive;
    }
    console.log(data.filter(data => data.Name === pick)[0].Neutral);
-   cardInfos = cardInfos +"\r\nNeutral Attributes: \r\n"+data.filter(data => data.Name === pick)[0].Neutral;
+   cardInfos = cardInfos +"<br>Neutral Attributes: <br>"+data.filter(data => data.Name === pick)[0].Neutral;
    document.getElementById("CardInfo").innerHTML = cardInfos;
 
 }
