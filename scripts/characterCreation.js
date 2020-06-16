@@ -109,22 +109,22 @@ function Draw()
     const rand = Math.random() < (1-probaR/100);
 
 	if (rand == 0){
-        var pick = tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit+ "_R";
-        if (tarot_deck[increment].Suit.localeCompare("Major") == 0){ // if major
-            changeCard(tarot_deck[increment].Value, 0);
-            parseData("lastv25.github.io/tarot_meaning.csv", tarot_deck[increment].Value, 0, getInfosonCard);
+        var pick = tarot_deck[increment_deck].Value + "_" + tarot_deck[increment_deck].Suit+ "_R";
+        if (tarot_deck[increment_deck].Suit.localeCompare("Major") == 0){ // if major
+            changeCard(tarot_deck[increment_deck].Value, 0);
+            parseData("lastv25.github.io/tarot_meaning.csv", tarot_deck[increment_deck].Value, 0, getInfosonCard);
         } else {
-            changeCard(tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit, 0);
-            parseData("lastv25.github.io/tarot_meaning.csv", tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit, 0, getInfosonCard);
+            changeCard(tarot_deck[increment_deck].Value + "_" + tarot_deck[increment_deck].Suit, 0);
+            parseData("lastv25.github.io/tarot_meaning.csv", tarot_deck[increment_deck].Value + "_" + tarot_deck[increment_deck].Suit, 0, getInfosonCard);
         }
     } else {
-        var pick = tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit ;
-        if (tarot_deck[increment].Suit.localeCompare("Major") == 0){ // if major
-            changeCard(tarot_deck[increment].Value, 1);
-            parseData("lastv25.github.io/tarot_meaning.csv", tarot_deck[increment].Value, 1, getInfosonCard);
+        var pick = tarot_deck[increment_deck].Value + "_" + tarot_deck[increment_deck].Suit ;
+        if (tarot_deck[increment_deck].Suit.localeCompare("Major") == 0){ // if major
+            changeCard(tarot_deck[increment_deck].Value, 1);
+            parseData("lastv25.github.io/tarot_meaning.csv", tarot_deck[increment_deck].Value, 1, getInfosonCard);
         } else {
-            changeCard(tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit, 1);
-            parseData("lastv25.github.io/tarot_meaning.csv", tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit, 1, getInfosonCard);
+            changeCard(tarot_deck[increment].Value + "_" + tarot_deck[increment_deck].Suit, 1);
+            parseData("lastv25.github.io/tarot_meaning.csv", tarot_deck[increment_deck].Value + "_" + tarot_deck[increment_deck].Suit, 1, getInfosonCard);
         }
     }
 
