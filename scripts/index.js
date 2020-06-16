@@ -58,18 +58,25 @@ function shuffle()
 
 function getInfosonCard(data, pick, reversed)
 {
+
+   var cardInfos = pick+"\n";
    console.log("card Info");
    console.log(pick);
    if (reversed == 0){
         console.log("Negative");
         console.log(data.filter(data => data.Name === pick)[0].Name);
         console.log(data.filter(data => data.Name === pick)[0].Negative);
+        cardInfos = cardInfos +data.filter(data => data.Name === pick)[0].Name +"\n" + "Negative attributes\n" + data.filter(data => data.Name === pick)[0].Negative;
    } else {
         console.log("Positive");
         console.log(data.filter(data => data.Name === pick)[0].Name);
         console.log(data.filter(data => data.Name === pick)[0].Positive);
+        cardInfos = cardInfos +data.filter(data => data.Name === pick)[0].Name +"\n" + "Positive attributes\n" + data.filter(data => data.Name === pick)[0].Negative;
    }
    console.log(data.filter(data => data.Name === pick)[0].Neutral);
+   cardInfos = cardInfos +"\nNeutral Attributes\n"+data.filter(data => data.Name === pick)[0].Neutral;
+   document.getElementById("CardInfo").innerHTML = cardInfos;
+
 }
 
 function parseData(url, cardName, reversed, callBack) {   //papa parse is async so need callback function
@@ -141,7 +148,7 @@ function Draw()
    var newText = cardNum.toString()+ " remaining cards";
    document.getElementById("CardsNumber").innerHTML = newText;
 
-   if (increment == 77){
+   if (increment == 78){
         Reset();
    }
    console.log(pick);
