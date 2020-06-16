@@ -93,7 +93,6 @@ function parseData(url, cardName, reversed, callBack) {   //papa parse is async 
 function changeCard(card_name, reverse)
 {
     var name = "images/cards/" + card_name + ".jpg";
-
     if (reverse == 0) {// if reversed
         document.getElementById(fields[increment_fields]).style.transform = "rotate(180deg)";
     } else {
