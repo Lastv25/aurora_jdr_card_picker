@@ -99,9 +99,9 @@ box-shadow: 0 0 8px 0 dodgerBlue;
 
 /* container for card and description in character creation page */
 .container3 {
-    margin: auto;
+    left-margin: 300px;
     padding: 20px 40px 40px;
-    max-width: 300px;
+    max-width: 400px;
     height: 200px;
 }
 .c3_image {
