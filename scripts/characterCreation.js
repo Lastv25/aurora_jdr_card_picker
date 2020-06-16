@@ -9,11 +9,11 @@ var major = ["The Fool", "The Magician", "The High Priest", "The Empress", "The 
 var fields = ["past", "present", "future", "body", "mind", "soul", "you", "relashionship", "forgotname"]
 
 var tarot_deck;  // global deck variable
-var increment = 0;
+var increment_deck = 0;
+var increment_fields = 0;
 var getDrawButton = document.getElementById('drawButton');
 var getShuffleButton = document.getElementById('shuffleButton');
 var getprobaR = document.getElementById("probaR");
-var reversed = 0;
 var cardNum = 78;
 
 
@@ -73,7 +73,7 @@ function getInfosonCard(data, pick, reversed)
    }
    console.log(data.filter(data => data.Name === pick)[0].Neutral);
    cardInfos = cardInfos +"<br>Neutral Attributes: <br>"+data.filter(data => data.Name === pick)[0].Neutral;
-   document.getElementById("CardInfo").innerHTML = cardInfos;
+   document.getElementById(fields[increment_fields]).innerHTML = cardInfos;
 
 }
 
@@ -95,20 +95,10 @@ function changeCard(card_name, reverse)
     var name = "images/cards/" + card_name + ".jpg";
 
     if (reverse == 0) {// if reversed
-        if (reversed == 1) {// if already reversed
-                document.getElementById('imageOnClick').src= name;
-        } else {
-            document.getElementById('imageOnClick').src= name;
-            document.getElementById("imageOnClick").style.transform = "rotate(180deg)";
-            reversed = 1;
+        document.getElementById(fields[increment_fields]).style.transform = "rotate(180deg)";
         }
     } else {
-        if (reversed == 1) {// if already reversed
-            document.getElementById('imageOnClick').src= name;
-            document.getElementById("imageOnClick").style.transform = "rotate(0deg)";
-            reversed = 0;
-        } else {
-            document.getElementById('imageOnClick').src= name;
+        document.getElementById(fields[increment_fields]).src= name;
         }
     }
 	console.log("Card Changed");
@@ -141,10 +131,9 @@ function Draw()
         }
     }
 
-   increment = increment+1;
+   increment_deck = increment_deck+1;
+   increment_fields = increment_fields+1;
    cardNum = cardNum-1;
-   var newText = cardNum.toString()+ " remaining cards";
-   document.getElementById("CardsNumber").innerHTML = newText;
 
    if (increment == 78){
         Reset();
