@@ -99,6 +99,7 @@ function changeCard(card_name, reverse)
         document.getElementById(fields[increment_fields]).src= name;
     }
 	console.log("Card Changed");
+	console.log(fields[increment_fields]);
 }
 
 function Draw()
@@ -135,7 +136,7 @@ function Draw()
    if (increment_deck == 78){
         Reset();
    }
-   console.log(pick);
+   //console.log(pick);
 
 }
 
