@@ -6,7 +6,9 @@ var major = ["The Fool", "The Magician", "The High Priest", "The Empress", "The 
                 "The Lovers", "The Chariot", "Strenght", "The Hermit", "Wheel of Fortune", "Justice", "The Hanged Man",
                 "Death", "Temperance", "The Devil", "The Tower", "The Star", "The Moon", "The Sun", "Judgment",
                 "The World"];
-var fields = ["past", "present", "future", "body", "mind", "soul", "you", "relashionship", "forgotname"]
+var fields = ["past", "present", "future", "body", "mind", "soul", "you", "interest", "relationship"];
+var cardsfields = ["CardInfoPast", "CardInfoPresent", "CardInfoFuture", "CardInfoBody", "CardInfoMind",
+                    "CardInfoSoul", "CardInfoYou", "CardInfoInterest", "CardInfoRelationship"];
 
 var tarot_deck;  // global deck variable
 var increment_deck = 0;
@@ -94,7 +96,6 @@ function changeCard(card_name, reverse)
 {
     var name = "images/cards/" + card_name + ".jpg";
     if (reverse == 0) {// if reversed
-        console.log("Here");
         document.getElementById(fields[increment_fields]).src= name;
         document.getElementById(fields[increment_fields]).style.transform = "rotate(180deg)";
     } else {
