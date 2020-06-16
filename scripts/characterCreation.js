@@ -98,7 +98,6 @@ function changeCard(card_name, reverse)
         document.getElementById(fields[increment_fields]).style.transform = "rotate(180deg)";
     } else {
         document.getElementById(fields[increment_fields]).src= name;
-        }
     }
 	console.log("Card Changed");
 }
