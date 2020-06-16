@@ -60,7 +60,7 @@ function getInfosonCard(data, pick, reversed)
 {
    console.log("card Info");
    console.log(pick);
-   if (reverse == 0){
+   if (reversed == 0){
         console.log(data.filter(data => data.Name === pick)[0].Name);
         console.log(data.filter(data => data.Name === pick)[0].Negative);
    } else {
