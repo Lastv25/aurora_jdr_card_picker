@@ -87,8 +87,8 @@ box-shadow: 0 0 8px 0 dodgerBlue;
     grid-template-columns: auto auto auto 100px;
     margin: auto;
     padding: 20px 40px 40px;
-    max-width: 1300px;
-    height: 700px;
+    max-width: 900px;
+    height: 300px;
 }
 
 .container3 {
