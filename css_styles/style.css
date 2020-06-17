@@ -118,7 +118,7 @@ box-shadow: 0 0 8px 0 dodgerBlue;
 }
 
 select {
-  min-height: 100px;
+  min-height: 150px;
 }
 /* Style the content */
 .content {
