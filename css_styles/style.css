@@ -116,6 +116,10 @@ box-shadow: 0 0 8px 0 dodgerBlue;
     grid-template-rows: auto auto auto;
     margin: auto;
 }
+
+select {
+  min-height: 100px;
+}
 /* Style the content */
 .content {
   text-align: center;
