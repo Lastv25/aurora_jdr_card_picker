@@ -81,6 +81,14 @@ border-color: dodgerBlue;
 box-shadow: 0 0 8px 0 dodgerBlue;
 }
 
+
+.container {
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    margin: auto;
+}
+
 /* container for card and description in index page */
 .container2 {
     margin: auto;

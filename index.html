@@ -25,28 +25,30 @@
         <a href="https://www.w3schools.com/css/css_templates.asp">https://www.w3schools.com/css/css_templates.asp</a>.<p>
 </div>
 
-<div class="btn-group">
-    <button id="drawButton">Draw</button>
-    <button id="shuffleButton">Shuffle</button>
-</div>
-
-<div class="container2">
-    <img class="c2_image" src="images/cards/tarot back.jpg" width="250" height="400" alt="card_back" id="imageOnClick">
-    <div class="c2_text">
-        <h3 >Card Info</h3>
-        <p id="CardsNumber">78 remaining cards</p>
-        <p id="CardInfo">Back of the deck</p>
-
+<div class="container">
+    <div class="btn-group">
+        <button id="drawButton">Draw</button>
+        <button id="shuffleButton">Shuffle</button>
     </div>
+
+    <div class="container2">
+        <img class="c2_image" src="images/cards/tarot back.jpg" width="250" height="400" alt="card_back" id="imageOnClick">
+        <div class="c2_text">
+            <h3 >Card Info</h3>
+            <p id="CardsNumber">78 remaining cards</p>
+            <p id="CardInfo">Back of the deck</p>
+
+        </div>
+    </div>
+
+
+    <div class="content">
+        <p>In a tarot draw there is a probability of getting reversed cards.<br>
+            To simulate this please input the probability of a card being reversed.<p>
+    </div>
+
+    <input type="text" id="probaR" value="50">
 </div>
-
-
-<div class="content">
-    <p>In a tarot draw there is a probability of getting reversed cards.<br>
-        To simulate this please input the probability of a card being reversed.<p>
-</div>
-
-<input type="text" id="probaR" value="50">
 
 
 </body>
