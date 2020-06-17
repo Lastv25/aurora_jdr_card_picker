@@ -35,7 +35,7 @@ function getDeck()
 	// populating dropdown menu
 	var cardSelect = document.getElementById("cardSelector");
 	for(index in tarot_deck) {
-        if (tarot_deck[increment].Suit.localeCompare("Major") == 0){ // if major
+        if (tarot_deck[index].Suit.localeCompare("Major") == 0){ // if major
             cardSelect.options[cardSelect.options.length] = new Option(tarot_deck[index].Value, index);
         } else {
             cardSelect.options[cardSelect.options.length] = new Option(tarot_deck[index].Value+"_"+tarot_deck[increment].Suit, index);
