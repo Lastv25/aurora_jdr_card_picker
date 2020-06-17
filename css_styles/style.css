@@ -97,6 +97,8 @@ box-shadow: 0 0 8px 0 dodgerBlue;
     max-height: 480px;
     min-height: 400px;
     min-width: 600px;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 .c2_image {
         max-width: 250px;
