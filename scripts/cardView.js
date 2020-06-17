@@ -45,27 +45,25 @@ function getDeck()
     console.log("Menu populated");
 }
 
-function getInfosonCard(data, pick, reversed)
+function getInfosonCard(data, pick)
 {
 
    var cardInfos = pick+"<br>";
    console.log("card Info");
-   if (reversed == 0){
-        console.log("Negative");
-        console.log(data.filter(data => data.Name === pick)[0].Negative);
-        cardInfos = cardInfos +"<br>" + "Negative attributes: <br>" + data.filter(data => data.Name === pick)[0].Negative;
-   } else {
-        console.log("Positive");
-        console.log(data.filter(data => data.Name === pick)[0].Positive);
-        cardInfos = cardInfos +"<br>" + "Positive attributes: <br>" + data.filter(data => data.Name === pick)[0].Positive;
-   }
+
+   console.log("Positive");
+   console.log(data.filter(data => data.Name === pick)[0].Positive);
+   cardInfos = cardInfos +"<br>" + "Positive attributes: <br>" + data.filter(data => data.Name === pick)[0].Positive;
+   console.log("Negative");
+   console.log(data.filter(data => data.Name === pick)[0].Negative);
+   cardInfos = cardInfos +"<br>" + "Negative attributes: <br>" + data.filter(data => data.Name === pick)[0].Negative;
    console.log(data.filter(data => data.Name === pick)[0].Neutral);
    cardInfos = cardInfos +"<br>Neutral Attributes: <br>"+data.filter(data => data.Name === pick)[0].Neutral;
    document.getElementById("CardInfo").innerHTML = cardInfos;
 
 }
 
-function parseData(url, cardName, reversed, callBack) {   //papa parse is async so need callback function
+function parseData(url, cardName, callBack) {   //papa parse is async so need callback function
     Papa.parse(url, {linebreak:"\r\n",
         delimiter: ",",
         header:true,
@@ -73,79 +71,26 @@ function parseData(url, cardName, reversed, callBack) {   //papa parse is async 
         skipEmptyLines: true,
         complete: function(results) {
             //console.log(results.fields);
-            callBack(results.data, cardName, reversed);
+            callBack(results.data, cardName);
         }
     });
 }
 
-function changeCard(card_name, reverse)
+function changeCard(card_name)
 {
     var name = "images/cards/" + card_name + ".jpg";
 
-    if (reverse == 0) {// if reversed
-        if (reversed == 1) {// if already reversed
-                document.getElementById('imageOnClick').src= name;
-        } else {
-            document.getElementById('imageOnClick').src= name;
-            document.getElementById("imageOnClick").style.transform = "rotate(180deg)";
-            reversed = 1;
-        }
-    } else {
-        if (reversed == 1) {// if already reversed
-            document.getElementById('imageOnClick').src= name;
-            document.getElementById("imageOnClick").style.transform = "rotate(0deg)";
-            reversed = 0;
-        } else {
-            document.getElementById('imageOnClick').src= name;
-        }
-    }
+    document.getElementById('imageOnClick').src= name;
 	console.log("Card Changed");
 }
 
-function Draw()
-{
-    console.log("Draw function called");
-    var probaR = getprobaR.value
 
-    const rand = Math.random() < (1-probaR/100);
-
-	if (rand == 0){
-        var pick = tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit+ "_R";
-        if (tarot_deck[increment].Suit.localeCompare("Major") == 0){ // if major
-            changeCard(tarot_deck[increment].Value, 0);
-            parseData("lastv25.github.io/tarot_meaning.csv", tarot_deck[increment].Value, 0, getInfosonCard);
-        } else {
-            changeCard(tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit, 0);
-            parseData("lastv25.github.io/tarot_meaning.csv", tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit, 0, getInfosonCard);
-        }
-    } else {
-        var pick = tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit ;
-        if (tarot_deck[increment].Suit.localeCompare("Major") == 0){ // if major
-            changeCard(tarot_deck[increment].Value, 1);
-            parseData("lastv25.github.io/tarot_meaning.csv", tarot_deck[increment].Value, 1, getInfosonCard);
-        } else {
-            changeCard(tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit, 1);
-            parseData("lastv25.github.io/tarot_meaning.csv", tarot_deck[increment].Value + "_" + tarot_deck[increment].Suit, 1, getInfosonCard);
-        }
-    }
-
-   increment = increment+1;
-   cardNum = cardNum-1;
-   var newText = cardNum.toString()+ " remaining cards";
-   document.getElementById("CardsNumber").innerHTML = newText;
-
-   if (increment == 78){
-        Reset();
-   }
-   console.log(pick);
-
-}
 function test()
 {
     console.log("test function");
     console.log(cardSelection.options[cardSelection.selectedIndex].text);
-    changeCard(cardSelection.options[cardSelection.selectedIndex].text, 0);
-    parseData("lastv25.github.io/tarot_meaning.csv", cardSelection.options[cardSelection.selectedIndex].text, 0, getInfosonCard);
+    changeCard(cardSelection.options[cardSelection.selectedIndex].text);
+    parseData("lastv25.github.io/tarot_meaning.csv", cardSelection.options[cardSelection.selectedIndex].text, getInfosonCard);
 }
 
 function Reset()
