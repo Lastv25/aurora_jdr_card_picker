@@ -8,6 +8,7 @@ var major = ["The Fool", "The Magician", "The High Priest", "The Empress", "The 
                 "The World"];
 
 var tarot_deck;  // global deck variable
+var cardSelection = document.getElementById("cardSelector");
 
 
 // Functions definitions
@@ -139,7 +140,12 @@ function Draw()
    console.log(pick);
 
 }
-
+function test()
+{
+    console.log("test function");
+    console.log(cardSelection.options[cardSelection.selectedIndex].value);
+    console.log(cardSelection.options[cardSelection.selectedIndex].text);
+}
 
 function Reset()
 {
@@ -151,3 +157,4 @@ function Reset()
 // Events
 
 window.onload = getDeck();
+cardSelection.addEventListener("select", test);
