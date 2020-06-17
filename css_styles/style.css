@@ -97,7 +97,13 @@ box-shadow: 0 0 8px 0 dodgerBlue;
     display: inline;
 }
 
-
+/* container for select menu in card view */
+.container4 {
+    margin: auto;
+    padding: 20px 40px 40px;
+    max-width: 400px;
+    max-height: 180px;
+}
 /* Style the content */
 .content {
   text-align: center;
