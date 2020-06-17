@@ -38,7 +38,7 @@ function getDeck()
         if (tarot_deck[index].Suit.localeCompare("Major") == 0){ // if major
             cardSelect.options[cardSelect.options.length] = new Option(tarot_deck[index].Value, index);
         } else {
-            cardSelect.options[cardSelect.options.length] = new Option(tarot_deck[index].Value+"_"+tarot_deck[increment].Suit, index);
+            cardSelect.options[cardSelect.options.length] = new Option(tarot_deck[index].Value+"_"+tarot_deck[index].Suit, index);
         }
     }
     console.log("Menu populated");
