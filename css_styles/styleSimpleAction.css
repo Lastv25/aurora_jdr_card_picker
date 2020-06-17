@@ -10,8 +10,8 @@ body {
 
 /* Style the side navigation */
 .sidenav {
-  height: 100%;
-  width: 200px;
+  max-height: 100%;
+  max-width: 200px;
   position: absolute;
   z-index: 1;
   top: 0;
@@ -40,9 +40,9 @@ body {
   color: white; /* White text */
   padding: 10px 24px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
-  width: 50%; /* Set a width if needed */
+  max-width: 50%; /* Set a max-width if needed */
   display: block; /* Make the buttons appear below each other */
-  margin: auto; /* Sidebar has width of 200px */
+  margin: auto; /* Sidebar has max-width of 200px */
 }
 
 .btn-group button:not(:last-child) {
@@ -59,14 +59,14 @@ body {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
-  width: 250px;
-  height: 400px;
+  max-width: 250px;
+  max-height: 400px;
   margin: auto;
 }
 
 /* input text */
 input[type="text"] {
-   width: 50%;
+   max-width: 50%;
    border: 2px solid #aaa;
    border-radius: 4px;
    margin: auto;
@@ -89,19 +89,19 @@ box-shadow: 0 0 8px 0 dodgerBlue;
     margin: auto;
     padding: 20px 40px 40px;
     max-width: 1300px;
-    height: 500px;
+    max-height: 500px;
 }
 
 .container3 {
     padding: 20px 40px 40px;
     max-width: 400px;
-    height: auto;
+    max-height: auto;
     scrollbar-color: blue;
     overflow-x: auto;
     overflow-y: auto;
 }
 .c3_image {
-        width: 150px;
+        max-width: 150px;
         margin: 30px 30px 30px 0;
         float: left;
     }
