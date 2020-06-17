@@ -157,4 +157,4 @@ function Reset()
 // Events
 
 window.onload = getDeck();
-cardSelection.addEventListener("select", test);
+cardSelection.addEventListener("click", test);
