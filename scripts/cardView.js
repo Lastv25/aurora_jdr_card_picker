@@ -143,8 +143,9 @@ function Draw()
 function test()
 {
     console.log("test function");
-    console.log(cardSelection.options[cardSelection.selectedIndex].value);
     console.log(cardSelection.options[cardSelection.selectedIndex].text);
+    changeCard(cardSelection.options[cardSelection.selectedIndex].text, 0);
+    parseData("lastv25.github.io/tarot_meaning.csv", cardSelection.options[cardSelection.selectedIndex].text, 0, getInfosonCard);
 }
 
 function Reset()
